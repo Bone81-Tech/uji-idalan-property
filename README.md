@@ -1,0 +1,1 @@
+# uji-idalan-property
