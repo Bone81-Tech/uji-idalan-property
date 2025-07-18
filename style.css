@@ -1,0 +1,58 @@
+/* Tambahkan custom style jika diperlukan */
+body {
+  scroll-behavior: smooth;
+}
+
+.hero-background {
+  background-image: url('./images/property-metro.webp');
+}
+
+/* Fallback untuk browser yang tidak mendukung .webp */
+.no-webp .hero-background {
+  background-image: url('./images/property-metro.png');
+}
+
+/* Animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-card-neon:hover {
+  box-shadow: 0 0 15px 5px rgba(59, 130, 246, 0.5); /* blue-500 with opacity */
+}
+
+.floating-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #10B981; /* green-500 */
+  padding: 8px 12px; /* Smaller padding for mobile */
+  font-size: 14px; /* Smaller font size for mobile */
+  border-radius: 5px;
+  border: 2px solid #10B981; /* green-500 */
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Larger CTA for desktop screens */
+@media (min-width: 768px) {
+  .floating-cta {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+.floating-cta:hover {
+  background-color: #10B981; /* green-500 */
+  color: #ffffff;
+}
