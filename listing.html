@@ -18,7 +18,7 @@
       <nav class="hidden md:flex space-x-8">
         <a href="index.html" class="font-medium hover:text-blue-600 transition">Beranda</a>
         <a href="listing.html" class="font-medium hover:text-blue-600 transition text-blue-600">Listing</a>
-        <a href="index.html#kontak" class="font-medium hover:text-blue-600 transition">Kontak</a>
+        <a href="kontak.html" class="font-medium hover:text-blue-600 transition">Kontak</a>
       </nav>
       <button id="menu-toggle" class="md:hidden text-gray-700">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -29,7 +29,7 @@
     <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-inner py-2 px-4">
       <a href="index.html" class="block py-2 font-medium hover:text-blue-600">Beranda</a>
       <a href="listing.html" class="block py-2 font-medium hover:text-blue-600 text-blue-600">Listing</a>
-      <a href="index.html#kontak" class="block py-2 font-medium hover:text-blue-600">Kontak</a>
+      <a href="kontak.html" class="block py-2 font-medium hover:text-blue-600">Kontak</a>
     </nav>
   </header>
 
@@ -43,13 +43,23 @@
       <!-- =================================================================== -->
       <!-- START: CONTOH PROPERTI 1 (Salin blok ini untuk properti baru) -->
       <!-- =================================================================== -->
-      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex">
-        <div class="md:w-1/3 grid grid-cols-1 gap-2 p-2">
-          <img src="images/property-1/image-1.webp" alt="Foto Properti 2 - 1" class="w-full h-auto object-cover rounded-lg shadow-md">
-          <img src="images/property-1/image-2.webp" alt="Foto Properti 2 - 2" class="w-full h-auto object-cover rounded-lg shadow-md">
-          <img src="images/property-1/image-3.webp" alt="Foto Properti 2 - 3" class="w-full h-auto object-cover rounded-lg shadow-md">
-          <img src="images/property-1/image-4.webp" alt="Foto Properti 2 - 4" class="w-full h-auto object-cover rounded-lg shadow-md">
-          <img src="images/property-1/image-5.webp" alt="Foto Properti 2 - 5" class="w-full h-auto object-cover rounded-lg shadow-md">
+      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <div class="md:w-1/3 image-gallery">
+          <div class="image-wrapper">
+            <img src="images/property-1/image-1.webp" alt="Foto Properti 1 - 1" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
+          <div class="image-wrapper">
+            <img src="images/property-1/image-2.webp" alt="Foto Properti 1 - 2" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
+          <div class="image-wrapper">
+            <img src="images/property-1/image-3.webp" alt="Foto Properti 1 - 3" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
+          <div class="image-wrapper">
+            <img src="images/property-1/image-4.webp" alt="Foto Properti 1 - 4" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
+          <div class="image-wrapper">
+            <img src="images/property-1/image-5.webp" alt="Foto Properti 1 - 5" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
         </div>
         <div class="p-6 md:w-2/3">
           <span class="text-sm text-gray-500">No. 1</span>
@@ -75,10 +85,14 @@
       <!-- =================================================================== -->
       <!-- START: CONTOH PROPERTI 2 (Salin blok ini untuk properti baru) -->
       <!-- =================================================================== -->
-      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex">
-        <div class="md:w-1/3 grid grid-cols-1 gap-2 p-2">
-          <img src="images/property-2/image-1.webp" alt="Foto Properti 1" class="w-full h-full object-cover">
-          <img src="images/property-2/image-2.webp" alt="Foto Properti 2 - 2" class="w-full h-auto object-cover rounded-lg shadow-md">
+      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <div class="md:w-1/3 image-gallery">
+          <div class="image-wrapper">
+            <img src="images/property-2/image-1.webp" alt="Foto Properti 2 - 1" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
+          <div class="image-wrapper">
+            <img src="images/property-2/image-2.webp" alt="Foto Properti 2 - 2" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
         </div>
         <div class="p-6 md:w-2/3">
           <span class="text-sm text-gray-500">No. 2</span>
@@ -104,23 +118,25 @@
       <!-- =================================================================== -->
       <!-- START: CONTOH PROPERTI 3 -->
       <!-- =================================================================== -->
-      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex">
-        <div class="md:w-1/3">
-          <img src="images/placeholder.png" alt="Foto Properti 3" class="w-full h-full object-cover">
+      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <div class="md:w-1/3 image-gallery">
+          <div class="image-wrapper">
+            <img src="images/property-3/image-1.webp" alt="Foto Properti 3 - 1" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
         </div>
         <div class="p-6 md:w-2/3">
           <span class="text-sm text-gray-500">No. 3</span>
-          <h3 class="text-2xl font-bold text-gray-800 mt-1 mb-2">Lokasi: Properti Baru 1, Kota</h3>
+          <h3 class="text-2xl font-bold text-gray-800 mt-1 mb-2">Condominium, Taman Anggrek, Jakarta Barat</h3>
           <div class="text-gray-700">
             <p><strong>Detail Keterangan:</strong></p>
             <ul class="list-disc list-inside ml-4 mt-2">
-              <li>Harga: ...</li>
+              <li>Harga: 3,75 M (nego sampai teler)</s></li>
               <li>Luas Tanah: ... m²</li>
-              <li>Luas Bangunan: ... m²</li>
-              <li>Kamar Tidur: ...</li>
+              <li>Luas Bangunan: 146 m²</li>
+              <li>Kamar Tidur: 3 </li>
               <li>Kamar Mandi: ...</li>
-              <li>Sertifikat: SHM/HGB/Lainnya</li>
-              <li>Deskripsi tambahan mengenai properti, fasilitas, dan aksesibilitas.</li>
+              <li>Sertifikat: SHM / Hak milik</li>
+              <li>Informasi Tambahan : Tower 6 lantai 17, View Jalan Raya, Best view Taman Anggrek</li>
             </ul>
           </div>
         </div>
@@ -132,23 +148,37 @@
       <!-- =================================================================== -->
       <!-- START: CONTOH PROPERTI 4 -->
       <!-- =================================================================== -->
-      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex">
-        <div class="md:w-1/3">
-          <img src="images/placeholder.png" alt="Foto Properti 4" class="w-full h-full object-cover">
+      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <div class="md:w-1/3 image-gallery">
+          <div class="image-wrapper">
+            <img src="images/property-4/image-1.webp" alt="Foto Properti 4 - 1" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
+          <div class="image-wrapper">
+            <img src="images/property-4/image-2.webp" alt="Foto Properti 4 - 2" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
+          <div class="image-wrapper">
+            <img src="images/property-4/image-3.webp" alt="Foto Properti 4 - 3" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
+          <div class="image-wrapper">
+            <img src="images/property-4/image-4.webp" alt="Foto Properti 4 - 4" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
+          <div class="image-wrapper">
+            <img src="images/property-4/image-5.webp" alt="Foto Properti 4 - 5" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
         </div>
         <div class="p-6 md:w-2/3">
           <span class="text-sm text-gray-500">No. 4</span>
-          <h3 class="text-2xl font-bold text-gray-800 mt-1 mb-2">Lokasi: Properti Baru 2, Kota</h3>
+          <h3 class="text-2xl font-bold text-gray-800 mt-1 mb-2">Rumah Harapan Indah, Cluster Terdepan</h3>
           <div class="text-gray-700">
             <p><strong>Detail Keterangan:</strong></p>
             <ul class="list-disc list-inside ml-4 mt-2">
-              <li>Harga: ...</li>
-              <li>Luas Tanah: ... m²</li>
-              <li>Luas Bangunan: ... m²</li>
-              <li>Kamar Tidur: ...</li>
-              <li>Kamar Mandi: ...</li>
-              <li>Sertifikat: SHM/HGB/Lainnya</li>
-              <li>Deskripsi tambahan mengenai properti, fasilitas, dan aksesibilitas.</li>
+              <li>Harga: 900 juta</li>
+              <li>Luas Tanah: 48 m²</li>
+              <li>Luas Bangunan: 48 m²</li>
+              <li>Kamar Tidur: 2 </li>
+              <li>Kamar Mandi: 2 </li>
+              <li>Sertifikat: - </li>
+              <li>Informasi Tambahan : PLN 2200 watt, PAM, Semi Furnish, Hadap Timur</li>
             </ul>
           </div>
         </div>
@@ -160,9 +190,11 @@
       <!-- =================================================================== -->
       <!-- START: CONTOH PROPERTI 5 -->
       <!-- =================================================================== -->
-      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex">
-        <div class="md:w-1/3">
-          <img src="images/placeholder.png" alt="Foto Properti 5" class="w-full h-full object-cover">
+      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <div class="md:w-1/3 image-gallery">
+          <div class="image-wrapper">
+            <img src="images/placeholder.png" alt="Foto Properti 5 - 1" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
         </div>
         <div class="p-6 md:w-2/3">
           <span class="text-sm text-gray-500">No. 5</span>
@@ -188,9 +220,11 @@
       <!-- =================================================================== -->
       <!-- START: CONTOH PROPERTI 6 -->
       <!-- =================================================================== -->
-      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex">
-        <div class="md:w-1/3">
-          <img src="images/placeholder.png" alt="Foto Properti 6" class="w-full h-full object-cover">
+      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <div class="md:w-1/3 image-gallery">
+          <div class="image-wrapper">
+            <img src="images/placeholder.png" alt="Foto Properti 6 - 1" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
         </div>
         <div class="p-6 md:w-2/3">
           <span class="text-sm text-gray-500">No. 6</span>
@@ -216,9 +250,11 @@
       <!-- =================================================================== -->
       <!-- START: CONTOH PROPERTI 7 -->
       <!-- =================================================================== -->
-      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex">
-        <div class="md:w-1/3">
-          <img src="images/placeholder.png" alt="Foto Properti 7" class="w-full h-full object-cover">
+      <div class="property-item bg-white rounded-lg shadow-md overflow-hidden md:flex transition-all duration-300 hover:shadow-xl hover:scale-105">
+        <div class="md:w-1/3 image-gallery">
+          <div class="image-wrapper">
+            <img src="images/placeholder.png" alt="Foto Properti 7 - 1" class="w-full h-full object-cover rounded-lg shadow-md">
+          </div>
         </div>
         <div class="p-6 md:w-2/3">
           <span class="text-sm text-gray-500">No. 7</span>
